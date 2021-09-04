@@ -1,14 +1,13 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - CameraResolution
     - MainMenu
     - Select_Photo
     Unity.Mobile.AndroidLogcat.Editor.dll:
     - Unity.Android.Logcat.AndroidLogcatManager
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
-    Unity.Timeline.Editor.dll:
-    - TimelineProjectSettings
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -44,21 +43,23 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1506}
+      Script: {instanceID: 1606}
     - Class: 114
-      Script: {instanceID: 1684}
+      Script: {instanceID: 1784}
     - Class: 114
-      Script: {instanceID: 2020}
+      Script: {instanceID: 2120}
     - Class: 114
-      Script: {instanceID: 2308}
+      Script: {instanceID: 2408}
     - Class: 114
-      Script: {instanceID: 2414}
+      Script: {instanceID: 2514}
     - Class: 114
-      Script: {instanceID: 2582}
+      Script: {instanceID: 2682}
     - Class: 114
-      Script: {instanceID: 2776}
+      Script: {instanceID: 2876}
     - Class: 114
-      Script: {instanceID: 2858}
+      Script: {instanceID: 2958}
+    - Class: 114
+      Script: {instanceID: 18388}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -97,21 +98,23 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1506}
+      Script: {instanceID: 1606}
     - Class: 114
-      Script: {instanceID: 2020}
+      Script: {instanceID: 2120}
     - Class: 114
-      Script: {instanceID: 2308}
+      Script: {instanceID: 2408}
     - Class: 114
-      Script: {instanceID: 2414}
+      Script: {instanceID: 2514}
     - Class: 114
-      Script: {instanceID: 2582}
+      Script: {instanceID: 2682}
     - Class: 114
-      Script: {instanceID: 2776}
+      Script: {instanceID: 2876}
     - Class: 114
-      Script: {instanceID: 2858}
+      Script: {instanceID: 2958}
     - Class: 114
-      Script: {instanceID: 3078}
+      Script: {instanceID: 3178}
+    - Class: 114
+      Script: {instanceID: 18388}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -567,6 +570,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: TouchInputModule
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CameraResolution
   platform: 13
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
