@@ -3,7 +3,10 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - CameraResolution
     - MainMenu
+    - Select_Category
     - Select_Photo
+    Unity.Mobile.AndroidLogcat.Editor.dll:
+    - Unity.Android.Logcat.AndroidLogcatManager
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     UnityEditor.TestRunner.dll:
@@ -41,23 +44,78 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1510}
+      Script: {instanceID: 1636}
     - Class: 114
-      Script: {instanceID: 1688}
+      Script: {instanceID: 1814}
     - Class: 114
-      Script: {instanceID: 2028}
+      Script: {instanceID: 2152}
     - Class: 114
-      Script: {instanceID: 2116}
+      Script: {instanceID: 2240}
     - Class: 114
-      Script: {instanceID: 2318}
+      Script: {instanceID: 2442}
     - Class: 114
-      Script: {instanceID: 2428}
+      Script: {instanceID: 2552}
     - Class: 114
-      Script: {instanceID: 2598}
+      Script: {instanceID: 2722}
     - Class: 114
-      Script: {instanceID: 2792}
+      Script: {instanceID: 2916}
     - Class: 114
-      Script: {instanceID: 2876}
+      Script: {instanceID: 3000}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/Select_Category.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1636}
+    - Class: 114
+      Script: {instanceID: 2152}
+    - Class: 114
+      Script: {instanceID: 2240}
+    - Class: 114
+      Script: {instanceID: 2442}
+    - Class: 114
+      Script: {instanceID: 2552}
+    - Class: 114
+      Script: {instanceID: 2722}
+    - Class: 114
+      Script: {instanceID: 2916}
+    - Class: 114
+      Script: {instanceID: 3000}
+    - Class: 114
+      Script: {instanceID: 3220}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -96,23 +154,23 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1510}
+      Script: {instanceID: 1636}
     - Class: 114
-      Script: {instanceID: 2028}
+      Script: {instanceID: 2152}
     - Class: 114
-      Script: {instanceID: 2116}
+      Script: {instanceID: 2240}
     - Class: 114
-      Script: {instanceID: 2318}
+      Script: {instanceID: 2442}
     - Class: 114
-      Script: {instanceID: 2428}
+      Script: {instanceID: 2552}
     - Class: 114
-      Script: {instanceID: 2598}
+      Script: {instanceID: 2722}
     - Class: 114
-      Script: {instanceID: 2792}
+      Script: {instanceID: 2916}
     - Class: 114
-      Script: {instanceID: 2876}
+      Script: {instanceID: 3000}
     - Class: 114
-      Script: {instanceID: 3096}
+      Script: {instanceID: 21048}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -405,7 +463,7 @@ ScriptsOnlyBuild:
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: Select_Photo
+    className: Select_Category
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -592,8 +650,15 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: TouchInputModule
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Select_Photo
   platform: 13
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
+  - Assets/Scenes/Select_Category.unity
   - Assets/Scenes/Select_Photo.unity
-  playerPath: C:/Users/woo/Desktop/asdf.apk
+  playerPath: C:/Users/82103/Desktop/puzzler.apk

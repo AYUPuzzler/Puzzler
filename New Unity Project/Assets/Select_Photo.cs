@@ -5,11 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class Select_Photo : MonoBehaviour
 {
-    
-    public void OnClickExit()
-    {
-        SceneManager.LoadScene("MainMenu");
-    }
     public void OnClickSelect()
     {
         int maxSize = 512;
@@ -44,4 +39,11 @@ public class Select_Photo : MonoBehaviour
 
         Debug.Log("Permission result: " + permission);
     }
+
+    public void OnClickExit()
+    {
+        SceneManager.LoadScene("Select_Category");
+    }
+
+
 }

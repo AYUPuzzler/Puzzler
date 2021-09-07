@@ -8,8 +8,7 @@ public class MainMenu : MonoBehaviour
 {
     public void OnClickStart()
     {
-        Debug.Log("ªı ∞‘¿”");
-        SceneManager.LoadScene("Select_Photo");
+        SceneManager.LoadScene("Select_Category");
     }
 
     public void OnClickQuit()
