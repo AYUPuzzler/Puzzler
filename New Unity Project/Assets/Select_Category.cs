@@ -13,5 +13,11 @@ public class Select_Category : MonoBehaviour
     {
         SceneManager.LoadScene("MainMenu");
     }
-
+    void Esc()
+    {
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            SceneManager.LoadScene("MainMenu");
+        }
+    }
 }

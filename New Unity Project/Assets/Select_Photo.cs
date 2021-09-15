@@ -2,23 +2,32 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using System.IO;
 
 public class Select_Photo : MonoBehaviour
 {
+    public Texture2D texture;
+
+    [SerializeField]
+    GameObject canvas;
     public void OnClickSelect()
     {
         int maxSize = 512;
         NativeGallery.Permission permission = NativeGallery.GetImageFromGallery((path) =>
         {
+
             Debug.Log("Image path: " + path);
             if (path != null)
             {
-                Texture2D texture = NativeGallery.LoadImageAtPath(path, maxSize);
+                texture = NativeGallery.LoadImageAtPath(path, maxSize);
                 if (texture == null)
                 {
                     Debug.Log("Couldn't load texture from " + path);
                     return;
                 }
+
+
 
                 GameObject quad = GameObject.CreatePrimitive(PrimitiveType.Quad);
                 quad.transform.position = Camera.main.transform.position + Camera.main.transform.forward * 2.5f;
@@ -31,19 +40,33 @@ public class Select_Photo : MonoBehaviour
 
                 material.mainTexture = texture;
 
-                Destroy(quad, 5f);
+                Sprite sp = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), new Vector2(0.5f, 0.5f));
+                canvas.GetComponent<Image>().sprite = sp;
 
-                Destroy(texture, 5f);
+
             }
         });
-
+        
         Debug.Log("Permission result: " + permission);
+
     }
+
+    public void OnClickStart()
+    {
+        SceneManager.LoadScene("GameScreen");
+    }
+
 
     public void OnClickExit()
     {
         SceneManager.LoadScene("Select_Category");
     }
-
-
+    void Esc()
+    {
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            SceneManager.LoadScene("Select_Category");
+        }
+    }
 }
+

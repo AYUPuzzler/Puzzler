@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Select_Photo.unity
     guid: 157211e957d7d2245a55cd963b6f1ec2
+  - enabled: 1
+    path: Assets/Scenes/GameScreen.unity
+    guid: a81cf12ba618c204e8179dc7c87cc7ce
   m_configObjects: {}

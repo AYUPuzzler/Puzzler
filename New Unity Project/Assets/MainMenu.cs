@@ -20,5 +20,13 @@ public class MainMenu : MonoBehaviour
 #endif
     }
 
+    void Esc()
+    {
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
+    }
+
 }
 
