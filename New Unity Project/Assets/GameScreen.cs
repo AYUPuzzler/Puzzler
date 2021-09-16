@@ -8,7 +8,7 @@ using System.IO;
 
 public class GameScreen : MonoBehaviour
 {
-
+    /*
     [SerializeField]
     GameObject canvas;
     void Start()
@@ -21,7 +21,7 @@ public class GameScreen : MonoBehaviour
         Sprite sp = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), new Vector2(0.5f, 0.5f));
         canvas.GetComponent<Image>().sprite = sp;
     }
-
+    */
 
 
     public void OnClickExit()

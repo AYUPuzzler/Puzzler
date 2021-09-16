@@ -44,6 +44,9 @@ public class Select_Photo : MonoBehaviour
                 canvas.GetComponent<Image>().sprite = sp;
 
 
+                ManagerData.instanceData.Image = sp;
+
+
             }
         });
         
