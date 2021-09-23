@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637665925119490386
-    m_Hash: 3059999691
+      ticks: 637679778081814711
+    m_Hash: 3221441874
   m_LockFileStatus:
     m_FilePath: C:/Users/82103/Documents/Puzzler/New Unity Project/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637665925119650372
-    m_Hash: 4082380854
+      ticks: 637679778081834717
+    m_Hash: 4053166064
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
@@ -117,6 +117,8 @@ m_PackageAssets:
         - 1.7.1
         - 1.8.0
         - 1.9.0
+        - 1.10.2
+        - 1.11.2
         - 2.0.0-preview.6
         - 2.0.0-preview.8
         - 2.0.0-preview.15
@@ -131,6 +133,8 @@ m_PackageAssets:
         - 1.7.1
         - 1.8.0
         - 1.9.0
+        - 1.10.2
+        - 1.11.2
         - 2.0.0-preview.6
         - 2.0.0-preview.8
         - 2.0.0-preview.15

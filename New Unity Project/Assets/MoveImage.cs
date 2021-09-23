@@ -7,15 +7,10 @@ using System.IO;
 
 public class MoveImage : MonoBehaviour
 {
-    public Texture2D texture;
-    public void Move()
+    public Image Selected;
+    public void Awake()
     {
-        Select_Photo select_Photo = GameObject.Find("Select_Image").GetComponent<Select_Photo>();
-
-        texture = select_Photo.texture;
-        Debug.Log(texture);
-        Sprite sp = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), new Vector2(0.5f, 0.5f));
-        
+        Selected.sprite = ManagerData.instanceData.Image;
     }
 
 }
