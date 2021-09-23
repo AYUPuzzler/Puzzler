@@ -8,7 +8,6 @@ using System.IO;
 
 public class GameScreen : MonoBehaviour
 {
-
     public void OnClickExit()
     {
         SceneManager.LoadScene("Select_Photo");
