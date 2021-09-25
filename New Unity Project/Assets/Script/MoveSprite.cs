@@ -11,8 +11,8 @@ public class MoveSprite : MonoBehaviour
     {
         Selected.GetComponent<SpriteRenderer>().sprite = ManagerData.instanceData.Image;
         
-        Vector3 SelectedSize = Selected.GetComponent<SpriteRenderer>().bounds.size;
-        Debug.Log(SelectedSize);
+        //Vector3 SelectedSize = Selected.GetComponent<SpriteRenderer>().bounds.size;
+        //Debug.Log(SelectedSize);
 
         //Vector3 leftDown = Camera.main.ScreenToWorldPoint(new Vector3(0, 0, 0));
         //Vector3 rightUp = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0));
