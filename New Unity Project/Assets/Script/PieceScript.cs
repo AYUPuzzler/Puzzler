@@ -7,6 +7,18 @@ public class PieceScript : MonoBehaviour
     private Vector3 RightPosition;
     public bool InRightPosition;
     public bool Selected;
+    public GameObject CompletePanel;
+    void Completetest()
+    {
+        int count = 0;
+        for (int i = 0; i < 36; i++)
+        {
+            if (GameObject.Find("Piece (" + i + ")").GetComponent<PieceScript>().InRightPosition == true)
+                count++;
+            if (count == 36)
+                CompletePanel.SetActive(true);
+        }
+    }
     void Start()
     {
         RightPosition = transform.position;
@@ -25,9 +37,9 @@ public class PieceScript : MonoBehaviour
                     transform.position = RightPosition;
                     InRightPosition = true;
                     GetComponent<SortingGroup>().sortingOrder = 0;
+                    Completetest();
                 }
             }
         }
-        
     }
 }
