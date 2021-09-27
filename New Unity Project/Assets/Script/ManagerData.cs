@@ -13,6 +13,11 @@ public class ManagerData : MonoBehaviour
         instanceData = this;
 
         DontDestroyOnLoad(gameObject);
+        if(instanceData != null)
+        {
+            Destroy(this.gameObject);
+            return;
+        }
     }
 
 }
