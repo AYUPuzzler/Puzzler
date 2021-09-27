@@ -5,6 +5,7 @@
 -a="C:\Users\82103\Documents\Puzzler\New Unity Project\Library\PlayerScriptAssemblies\NativeGallery.Runtime.dll"
 -a="C:\Users\82103\Documents\Puzzler\New Unity Project\Library\PlayerScriptAssemblies\UnityEngine.UI.dll"
 -a="C:\Users\82103\Documents\Puzzler\New Unity Project\Library\PlayerScriptAssemblies\Unity.Notifications.Android.dll"
+-a="C:\Users\82103\Documents\Puzzler\New Unity Project\Library\PlayerScriptAssemblies\ImageCropper.Runtime.dll"
 -a="C:\Users\82103\Documents\Puzzler\New Unity Project\Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\AOT\Newtonsoft.Json.dll"
 -a="C:\Users\82103\Documents\Puzzler\New Unity Project\Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Portable\Newtonsoft.Json.dll"
 -a="C:\Users\82103\Documents\Puzzler\New Unity Project\Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll"
