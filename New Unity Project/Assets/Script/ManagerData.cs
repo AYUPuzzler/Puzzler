@@ -8,6 +8,7 @@ public class ManagerData : MonoBehaviour
 {
     public static ManagerData instanceData;
     public Sprite Image;
+    public Texture2D texture2D;
     private void Awake()
     {
         instanceData = this;
