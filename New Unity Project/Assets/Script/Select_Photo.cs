@@ -8,6 +8,7 @@ using System.IO;
 public class Select_Photo : MonoBehaviour
 {
     public Texture2D texture;
+    public GameObject Select_Image;
 
     Texture2D duplicateTexture(Texture2D source)
     {
@@ -45,10 +46,10 @@ public class Select_Photo : MonoBehaviour
 
 
                 GameObject quad = GameObject.CreatePrimitive(PrimitiveType.Quad);
-                quad.transform.position = Camera.main.transform.position + Camera.main.transform.forward * 2.5f;
+                quad.transform.position = Camera.main.transform.position + Camera.main.transform.forward * 6f;
                 quad.transform.forward = Camera.main.transform.forward;
                 quad.transform.localScale = new Vector3(1f, texture.height / (float)texture.width, 1f);
-
+                quad.SetActive(false);
                 Material material = quad.GetComponent<Renderer>().material;
                 if (!material.shader.isSupported) // happens when Standard shader is not included in the build
                     material.shader = Shader.Find("Legacy Shaders/Diffuse");

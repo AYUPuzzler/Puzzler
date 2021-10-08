@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -268,6 +268,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   texture: {fileID: 0}
+  Select_Image: {fileID: 0}
   canvas: {fileID: 0}
 --- !u!114 &305615870
 MonoBehaviour:
@@ -502,6 +503,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   texture: {fileID: 0}
+  Select_Image: {fileID: 0}
   canvas: {fileID: 687960584}
 --- !u!114 &801440601
 MonoBehaviour:
@@ -723,6 +725,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Image: {fileID: 0}
+  texture2D: {fileID: 0}
 --- !u!4 &842983048
 Transform:
   m_ObjectHideFlags: 0
@@ -1011,6 +1014,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   texture: {fileID: 0}
+  Select_Image: {fileID: 0}
   canvas: {fileID: 0}
 --- !u!1 &1323583100
 GameObject:
@@ -1130,6 +1134,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   texture: {fileID: 0}
+  Select_Image: {fileID: 0}
   canvas: {fileID: 0}
 --- !u!114 &1893329749
 MonoBehaviour:
@@ -1289,6 +1294,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   texture: {fileID: 0}
+  Select_Image: {fileID: 0}
   canvas: {fileID: 0}
 --- !u!114 &1949844843
 MonoBehaviour:
