@@ -6,6 +6,7 @@ public static class ImageSlicer
 {
     public static Texture2D[,] GetSlices(Texture2D image, int blocksPerLine)
     {
+        image = ManagerData.instanceData.texture2D;
         int imageSize = Mathf.Min(image.width, image.height);
         int blockSize = imageSize / blocksPerLine;
 
