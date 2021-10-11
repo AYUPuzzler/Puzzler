@@ -9,15 +9,20 @@ public class Select_Photo : MonoBehaviour
 {
     public Texture2D texture;
     public GameObject Select_Image;
-    public void Awake()
+    public GameObject temp;
+    public void Start()  //Awake()
     {
         if (Select_Category.Category == 1)
         {
-            GameObject.Find("SlideButton").SetActive(false);
+            temp = GameObject.Find("SlideButton");
+            //temp.SetActive(false);
+            Destroy(temp);
         }
         if (Select_Category.Category == 2)
         {
-            GameObject.Find("JigsawButton").SetActive(false);
+            temp = GameObject.Find("JigsawButton");
+            Destroy(temp);
+            //GameObject.Find("JigsawButton").SetActive(false);
         }
     }
 
