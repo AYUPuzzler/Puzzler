@@ -11,7 +11,7 @@ public class Background : MonoBehaviour
     {
         if (collision.gameObject.tag == "Wall")
         {
-            transform.position = new Vector3(x: Random.Range(-9f, 9f), y: Random.Range(3f, 10f));
+            transform.position = new Vector3(x: Random.Range(-9f, 9f), y: Random.Range(3f, 30f));
             GetComponent<Rigidbody2D>().velocity = Vector3.zero;
         }
     }
