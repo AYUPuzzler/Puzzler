@@ -9,10 +9,26 @@ public class Select_Photo : MonoBehaviour
 {
     public Texture2D texture;
     public GameObject Select_Image;
+    public GameObject temp;
+    public void Start()  //Awake()
+    {
+        if (Select_Category.Category == 1)
+        {
+            temp = GameObject.Find("SlideButton");
+            //temp.SetActive(false);
+            Destroy(temp);
+        }
+        if (Select_Category.Category == 2)
+        {
+            temp = GameObject.Find("JigsawButton");
+            Destroy(temp);
+            //GameObject.Find("JigsawButton").SetActive(false);
+        }
+    }
 
     Texture2D duplicateTexture(Texture2D source)
     {
-        RenderTexture renderTex = RenderTexture.GetTemporary(source.width,source.height, 0, RenderTextureFormat.Default, RenderTextureReadWrite.Linear);
+        RenderTexture renderTex = RenderTexture.GetTemporary(source.width, source.height, 0, RenderTextureFormat.Default, RenderTextureReadWrite.Linear);
         Graphics.Blit(source, renderTex);
         RenderTexture previous = RenderTexture.active;
         RenderTexture.active = renderTex;
@@ -65,7 +81,7 @@ public class Select_Photo : MonoBehaviour
 
             }
         });
-        
+
         Debug.Log("Permission result: " + permission);
 
     }

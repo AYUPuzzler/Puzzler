@@ -5,8 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class Select_Category : MonoBehaviour
 {
-    public void OnClickStart()
+    public static int Category = 0;
+    public void Select_Jigsaw()
     {
+        Category = 1;
+        SceneManager.LoadScene("Select_Photo");
+    }
+    public void Select_Slide()
+    {
+        Category = 2;
         SceneManager.LoadScene("Select_Photo");
     }
     public void OnClickExit()
