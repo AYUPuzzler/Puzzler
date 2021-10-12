@@ -26,6 +26,7 @@ public class SlidePuzzle : MonoBehaviour
         //TextureImporter importer = AssetImporter.GetAtPath(path) as TextureImporter;
 
         CreateSlidePuzzle();
+        StartShuffle();
     }
 
     void Update()
