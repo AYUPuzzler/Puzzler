@@ -11,13 +11,38 @@ public class PieceScript : MonoBehaviour
     void Completetest()
     {
         int count = 0;
-        for (int i = 0; i < 36; i++)
+        if (Select_Level.Level == 0)
         {
-            if (GameObject.Find("Piece (" + i + ")").GetComponent<PieceScript>().InRightPosition == true)
-                count++;
-            if (count == 36)
-                CompletePanel.SetActive(true);
+            for (int i = 0; i < 36; i++)
+            {
+                if (GameObject.Find("Piece (" + i + ")").GetComponent<PieceScript>().InRightPosition == true)
+                    count++;
+                if (count == 36)
+                    CompletePanel.SetActive(true);
+            }
         }
+        if (Select_Level.Level == 1)
+        {
+            for (int i = 0; i < 64; i++)
+            {
+                if (GameObject.Find("Hard_Pieces (" + i + ")").GetComponent<PieceScript>().InRightPosition == true)
+                    count++;
+                if (count == 64)
+                    CompletePanel.SetActive(true);
+            }
+        }
+    }
+    void Awake()
+    {
+        if (Select_Level.Level == 0)
+        {
+            Destroy(GameObject.Find("Hard"));
+        }
+        if (Select_Level.Level == 1)
+        {
+            Destroy(GameObject.Find("Normal"));
+        }
+        
     }
     void Start()
     {
@@ -28,7 +53,7 @@ public class PieceScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Vector3.Distance(a: transform.position, b: RightPosition) < 0.5f)
+        if (Vector3.Distance(a: transform.position, b: RightPosition) < 4f)
         {
             if (!Selected)
             {
