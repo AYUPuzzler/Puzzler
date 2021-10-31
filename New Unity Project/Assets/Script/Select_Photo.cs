@@ -13,11 +13,11 @@ public class Select_Photo : MonoBehaviour
     {
         if (Select_Category.Category == 1)
         {
-            GameObject.Find("SlideButton").SetActive(false);
+            Destroy(GameObject.Find("SlideButton"));
         }
         if (Select_Category.Category == 2)
         {
-            GameObject.Find("JigsawButton").SetActive(false);
+            Destroy(GameObject.Find("JigsawButton"));
         }
     }
 

@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Select_Category : MonoBehaviour
 {
+    public static bool which = false;
     public static int Category = 0;
     public void Select_Jigsaw()
     {
@@ -18,7 +19,13 @@ public class Select_Category : MonoBehaviour
     }
     public void OnClickExit()
     {
-        SceneManager.LoadScene("MainMenu");
+        if(which == true)
+        {
+            which = false;
+            SceneManager.LoadScene("MapScene");
+        }
+        else
+        SceneManager.LoadScene("Select_Main");
     }
     void Esc()
     {

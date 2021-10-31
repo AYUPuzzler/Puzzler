@@ -8,7 +8,7 @@ public class MainMenu : MonoBehaviour
 {
     public void OnClickStart()
     {
-        SceneManager.LoadScene("Select_Category");
+        SceneManager.LoadScene("Select_Main");
     }
 
     public void OnClickQuit()

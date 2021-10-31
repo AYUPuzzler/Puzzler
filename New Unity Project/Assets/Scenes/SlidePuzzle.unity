@@ -324,7 +324,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uC0AC\uC9C4\uC744 \uB204\uB974\uBA74\n\uAC8C\uC784\uC774 \uC2DC\uC791\uB429\uB2C8\uB2E4"
+  m_Text: "Space\uB97C \uB204\uB974\uBA74\n\uAC8C\uC784\uC774 \uC2DC\uC791\uB429\uB2C8\uB2E4"
 --- !u!222 &377579910
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -581,7 +581,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 924288501}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -10242}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1090380976}
@@ -741,19 +741,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1090380980}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: PuzzleTrans, Assembly-CSharp
-        m_MethodName: SetPuzzlesPhoto
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 1090380980}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Image, UnityEngine.UI
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1090380980
 MonoBehaviour:
   m_ObjectHideFlags: 0
