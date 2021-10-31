@@ -9,7 +9,8 @@ public class Select_Photo : MonoBehaviour
 {
     public Texture2D texture;
     public GameObject Select_Image;
-    public void Awake()
+    public GameObject temp;
+    public void Start()  //Awake()
     {
         if (Select_Category.Category == 1)
         {
