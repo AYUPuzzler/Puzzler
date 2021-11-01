@@ -12,10 +12,14 @@ public class Select_Main : MonoBehaviour
     }
     public void Select_Uni()
     {
+        ManagerData.instanceData.gameCategory = 1;
+
+        Debug.Log(ManagerData.instanceData.gameCategory);
         SceneManager.LoadScene("Select_Uni");
     }
     public void Select_Category()
     {
+        ManagerData.instanceData.gameCategory = 2;
         SceneManager.LoadScene("Select_Category");
     }
 

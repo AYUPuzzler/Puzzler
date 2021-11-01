@@ -10,7 +10,7 @@ public class AssetImage : MonoBehaviour
     {
         //GameObject.Find("Image").GetComponent<Image>().sprite = Resources.Load<Sprite>("SuriGwan");
         GameObject.Find("Image").GetComponent<Image>().sprite = Sp;
-
+        ManagerData.instanceData.Image = Sp;
     }
     // Start is called before the first frame update
     void Start()
