@@ -11,6 +11,8 @@ public class ManagerData : MonoBehaviour
     public Texture2D texture2D; // 슬라이드 퍼즐용
     public int Category;
     public int gameCategory;
+    public int gameLevel;
+
     private void Awake()
     {
         instanceData = this;
