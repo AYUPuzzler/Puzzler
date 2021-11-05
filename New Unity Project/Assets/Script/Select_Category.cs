@@ -9,7 +9,7 @@ public class Select_Category : MonoBehaviour
     public void Select_Jigsaw()
     {
         ManagerData.instanceData.Category = 1;
-        Debug.Log(ManagerData.instanceData.gameCategory);
+        //Debug.Log(ManagerData.instanceData.gameCategory);
         if (ManagerData.instanceData.gameCategory == 1) {
             //SceneManager.LoadScene("Select_Photo");
             SceneManager.LoadScene("GameScreen");
@@ -21,7 +21,7 @@ public class Select_Category : MonoBehaviour
     {
         ManagerData.instanceData.Category = 2;
 
-        Debug.Log(ManagerData.instanceData.gameCategory);
+        //Debug.Log(ManagerData.instanceData.gameCategory);
         if (ManagerData.instanceData.gameCategory == 1)
         {
             //SceneManager.LoadScene("Select_Photo");
