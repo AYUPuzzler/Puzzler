@@ -5,20 +5,40 @@ using UnityEngine.SceneManagement;
 
 public class Select_Category : MonoBehaviour
 {
-    public static int Category = 0;
+    public static bool which = false;
     public void Select_Jigsaw()
     {
-        Category = 1;
-        SceneManager.LoadScene("Select_Photo");
+        ManagerData.instanceData.Category = 1;
+        //Debug.Log(ManagerData.instanceData.gameCategory);
+        if (ManagerData.instanceData.gameCategory == 1) {
+            //SceneManager.LoadScene("Select_Photo");
+            SceneManager.LoadScene("GameScreen");
+        }
+        else
+            SceneManager.LoadScene("Select_Photo");
     }
     public void Select_Slide()
     {
-        Category = 2;
-        SceneManager.LoadScene("Select_Photo");
+        ManagerData.instanceData.Category = 2;
+
+        //Debug.Log(ManagerData.instanceData.gameCategory);
+        if (ManagerData.instanceData.gameCategory == 1)
+        {
+            //SceneManager.LoadScene("Select_Photo");
+            SceneManager.LoadScene("SlidePuzzle");
+        }
+        else
+            SceneManager.LoadScene("Select_Photo");
     }
     public void OnClickExit()
     {
-        SceneManager.LoadScene("MainMenu");
+        if(which == true)
+        {
+            which = false;
+            SceneManager.LoadScene("MapScene");
+        }
+        else
+        SceneManager.LoadScene("Select_Main");
     }
     void Esc()
     {

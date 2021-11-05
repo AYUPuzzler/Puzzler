@@ -8,22 +8,16 @@ using System.IO;
 public class Select_Photo : MonoBehaviour
 {
     public Texture2D texture;
-    public GameObject Select_Image;
-    public GameObject temp;
     public void Start()  //Awake()
     {
-        if (Select_Category.Category == 1)
-        {
-            temp = GameObject.Find("SlideButton");
-            //temp.SetActive(false);
-            Destroy(temp);
-        }
-        if (Select_Category.Category == 2)
-        {
-            temp = GameObject.Find("JigsawButton");
-            Destroy(temp);
-            //GameObject.Find("JigsawButton").SetActive(false);
-        }
+        //if (Select_Category.Category == 1)
+        //{
+        //    Destroy(GameObject.Find("SlideButton"));
+        //}
+        //if (Select_Category.Category == 2)
+        //{
+        //    Destroy(GameObject.Find("JigsawButton"));
+        //}
     }
 
     Texture2D duplicateTexture(Texture2D source)
@@ -59,8 +53,6 @@ public class Select_Photo : MonoBehaviour
                     return;
                 }
 
-
-
                 GameObject quad = GameObject.CreatePrimitive(PrimitiveType.Quad);
                 quad.transform.position = Camera.main.transform.position + Camera.main.transform.forward * 6f;
                 quad.transform.forward = Camera.main.transform.forward;
@@ -77,8 +69,6 @@ public class Select_Photo : MonoBehaviour
 
                 ManagerData.instanceData.texture2D = duplicateTexture(texture);
                 ManagerData.instanceData.Image = sp;
-
-
             }
         });
 
@@ -88,14 +78,16 @@ public class Select_Photo : MonoBehaviour
 
     public void OnClickStartZigsaw()
     {
-        SceneManager.LoadScene("GameScreen");
+        Debug.Log(ManagerData.instanceData.Category);
+        if (ManagerData.instanceData.Category == 1)
+        {
+            SceneManager.LoadScene("GameScreen");
+        }
+        if (ManagerData.instanceData.Category == 2)
+        {
+            SceneManager.LoadScene("SlidePuzzle");
+        }
     }
-
-    public void OnClickStarSlide()
-    {
-        SceneManager.LoadScene("SlidePuzzle");
-    }
-
 
     public void OnClickExit()
     {
