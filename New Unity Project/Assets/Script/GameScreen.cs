@@ -10,7 +10,10 @@ public class GameScreen : MonoBehaviour
 {
     public void OnClickExit()
     {
-        SceneManager.LoadScene("Select_Photo");
+        if (ManagerData.instanceData.gameCategory == 1)
+            SceneManager.LoadScene("MapScene");
+        else if(ManagerData.instanceData.gameCategory == 2)
+            SceneManager.LoadScene("Select_Photo");
     }
 
     void Esc()
