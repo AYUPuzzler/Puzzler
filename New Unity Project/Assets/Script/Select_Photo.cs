@@ -8,16 +8,8 @@ using System.IO;
 public class Select_Photo : MonoBehaviour
 {
     public Texture2D texture;
-    public void Start()  //Awake()
+    public void Start()
     {
-        //if (Select_Category.Category == 1)
-        //{
-        //    Destroy(GameObject.Find("SlideButton"));
-        //}
-        //if (Select_Category.Category == 2)
-        //{
-        //    Destroy(GameObject.Find("JigsawButton"));
-        //}
     }
 
     Texture2D duplicateTexture(Texture2D source)
@@ -81,12 +73,15 @@ public class Select_Photo : MonoBehaviour
         Debug.Log(ManagerData.instanceData.Category);
         if (ManagerData.instanceData.Category == 1)
         {
-            SceneManager.LoadScene("GameScreen");
+            GameObject.Find("Canvas").transform.Find("LevelPanel").transform.Find("Jigsaw").gameObject.SetActive(true);
         }
         if (ManagerData.instanceData.Category == 2)
         {
-            SceneManager.LoadScene("SlidePuzzle");
+            GameObject.Find("Canvas").transform.Find("LevelPanel").transform.Find("Slide").gameObject.SetActive(true);
         }
+        GameObject.Find("Canvas").transform.Find("LevelPanel").gameObject.SetActive(true);
+
+
     }
 
     public void OnClickExit()
