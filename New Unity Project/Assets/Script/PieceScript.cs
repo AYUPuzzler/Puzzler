@@ -11,7 +11,7 @@ public class PieceScript : MonoBehaviour
     void Completetest()
     {
         int count = 0;
-        if (Select_Level.Level == 0)
+        if (ManagerData.instanceData.JigsawLevel == 1)
         {
             for (int i = 0; i < 36; i++)
             {
@@ -21,7 +21,7 @@ public class PieceScript : MonoBehaviour
                     CompletePanel.SetActive(true);
             }
         }
-        if (Select_Level.Level == 1)
+        if (ManagerData.instanceData.JigsawLevel == 2)
         {
             for (int i = 0; i < 64; i++)
             {
@@ -34,11 +34,11 @@ public class PieceScript : MonoBehaviour
     }
     void Awake()
     {
-        if (Select_Level.Level == 0)
+        if (ManagerData.instanceData.JigsawLevel == 1)
         {
             Destroy(GameObject.Find("Hard"));
         }
-        if (Select_Level.Level == 1)
+        if (ManagerData.instanceData.JigsawLevel == 2)
         {
             Destroy(GameObject.Find("Normal"));
         }

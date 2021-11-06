@@ -8,9 +8,6 @@ using System.IO;
 public class Select_Photo : MonoBehaviour
 {
     public Texture2D texture;
-    public void Start()
-    {
-    }
 
     Texture2D duplicateTexture(Texture2D source)
     {
@@ -80,8 +77,19 @@ public class Select_Photo : MonoBehaviour
             GameObject.Find("Canvas").transform.Find("LevelPanel").transform.Find("Slide").gameObject.SetActive(true);
         }
         GameObject.Find("Canvas").transform.Find("LevelPanel").gameObject.SetActive(true);
+    }
 
-
+    public void SetNormal()
+    {
+        ManagerData.instanceData.JigsawLevel = 1;
+        Debug.Log(ManagerData.instanceData.JigsawLevel);
+        SceneManager.LoadScene("GameScreen");
+    }
+    public void SetHard()
+    {
+        ManagerData.instanceData.JigsawLevel = 2;
+        Debug.Log(ManagerData.instanceData.JigsawLevel);
+        SceneManager.LoadScene("GameScreen");
     }
 
     public void OnClickExit()
