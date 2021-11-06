@@ -8,14 +8,14 @@ public class PuzzleTrans: MonoBehaviour
     public GameObject StartPanel;
     public void SetPuzzlesPhoto (Image Photo)
     {
-        if (Select_Level.Level == 0)
+        if (ManagerData.instanceData.JigsawLevel == 1)
         {
             for (int i = 0; i < 36; i++)
             {
                 GameObject.Find("Piece (" + i + ")").transform.Find("Selected").GetComponent<SpriteRenderer>().sprite = Photo.sprite;
             }
         }
-        if (Select_Level.Level == 1)
+        if (ManagerData.instanceData.JigsawLevel == 2)
         {
             for (int i = 0; i < 64; i++)
             {

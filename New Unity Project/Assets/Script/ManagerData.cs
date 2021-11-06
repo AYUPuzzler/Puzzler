@@ -12,6 +12,7 @@ public class ManagerData : MonoBehaviour
     public int Category;
     public int gameCategory;
     public int gameLevel;
+    public int JigsawLevel;
 
     private void Awake()
     {
