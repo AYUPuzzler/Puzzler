@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Select_Level1 : MonoBehaviour
@@ -27,12 +28,15 @@ public class Select_Level1 : MonoBehaviour
      public void onClickRight() 
     {
         game_Level++;
-        //ManagerData.instanceData.gameLevel = game_Level;
     }
 
     public void onClickLeft()
     {
         game_Level--;
-        //ManagerData.instanceData.gameLevel = game_Level;
+    }
+    public void onClickPlay()
+    {
+        ManagerData.instanceData.slideLevel = game_Level;
+        SceneManager.LoadScene("SlidePuzzle");
     }
 }

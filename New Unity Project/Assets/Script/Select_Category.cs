@@ -11,8 +11,6 @@ public class Select_Category : MonoBehaviour
         ManagerData.instanceData.Category = 1;
         //Debug.Log(ManagerData.instanceData.gameCategory);
         if (ManagerData.instanceData.gameCategory == 1) {
-            //SceneManager.LoadScene("Select_Photo");
-            //SceneManager.LoadScene("GameScreen");
             GameObject.Find("Canvas").transform.Find("LevelPanel").transform.Find("Jigsaw").gameObject.SetActive(true);
             GameObject.Find("Canvas").transform.Find("LevelPanel").gameObject.SetActive(true);
         }
@@ -33,8 +31,7 @@ public class Select_Category : MonoBehaviour
         {
             GameObject.Find("Canvas").transform.Find("LevelPanel").transform.Find("Slide").gameObject.SetActive(true);
             GameObject.Find("Canvas").transform.Find("LevelPanel").gameObject.SetActive(true);
-            //SceneManager.LoadScene("Select_Photo");
-            //SceneManager.LoadScene("SlidePuzzle");
+
         }
         else
             SceneManager.LoadScene("Select_Photo");

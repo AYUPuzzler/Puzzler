@@ -5,7 +5,7 @@ using UnityEngine;
 public class SlidePuzzle : MonoBehaviour
 {
     public Texture2D image;
-    public int blocksPerLine = 4;
+    public int blocksPerLine;
     public int shuffleLength = 20;
     public float defaultMoveDuration = .2f;
     public float shuffleMoveDuration = .1f;
@@ -30,7 +30,6 @@ public class SlidePuzzle : MonoBehaviour
     {
         //Texture2D image = ManagerData.instanceData.texture2D;
         //TextureImporter importer = AssetImporter.GetAtPath(path) as TextureImporter;
-
         CreateSlidePuzzle();
     }
 
@@ -45,6 +44,7 @@ public class SlidePuzzle : MonoBehaviour
 
     void CreateSlidePuzzle() 
     {
+        blocksPerLine = ManagerData.instanceData.slideLevel;
         blocks = new Block[blocksPerLine, blocksPerLine];
         Texture2D[,] imageSlices = ImageSlicer.GetSlices(image, blocksPerLine);
 
