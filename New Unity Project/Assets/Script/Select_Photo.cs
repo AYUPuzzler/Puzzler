@@ -67,7 +67,6 @@ public class Select_Photo : MonoBehaviour
 
     public void OnClickStartZigsaw()
     {
-        Debug.Log(ManagerData.instanceData.Category);
         if (ManagerData.instanceData.Category == 1)
         {
             GameObject.Find("Canvas").transform.Find("LevelPanel").transform.Find("Jigsaw").gameObject.SetActive(true);
@@ -78,6 +77,20 @@ public class Select_Photo : MonoBehaviour
         }
         GameObject.Find("Canvas").transform.Find("LevelPanel").gameObject.SetActive(true);
     }
+    public void ExitPanel()
+    {
+        if (ManagerData.instanceData.Category == 1)
+        {
+            GameObject.Find("Canvas").transform.Find("LevelPanel").transform.Find("Jigsaw").gameObject.SetActive(false);
+        }
+        if (ManagerData.instanceData.Category == 2)
+        {
+            GameObject.Find("Canvas").transform.Find("LevelPanel").transform.Find("Slide").gameObject.SetActive(false);
+        }
+        GameObject.Find("Canvas").transform.Find("LevelPanel").gameObject.SetActive(false);
+    }
+
+
 
     public void SetNormal()
     {

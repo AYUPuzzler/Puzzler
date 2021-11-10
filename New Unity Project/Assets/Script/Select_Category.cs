@@ -17,11 +17,6 @@ public class Select_Category : MonoBehaviour
         else
             SceneManager.LoadScene("Select_Photo");
     }
-
-
-
-
-
     public void Select_Slide()
     {
         ManagerData.instanceData.Category = 2;
@@ -36,6 +31,28 @@ public class Select_Category : MonoBehaviour
         else
             SceneManager.LoadScene("Select_Photo");
     }
+
+
+    public void ExitPanel()
+    {
+        if (ManagerData.instanceData.Category == 1)
+        {
+            GameObject.Find("Canvas").transform.Find("LevelPanel").transform.Find("Jigsaw").gameObject.SetActive(false);
+            GameObject.Find("Canvas").transform.Find("LevelPanel").gameObject.SetActive(false);
+        }
+        if (ManagerData.instanceData.Category == 2)
+        {
+            GameObject.Find("Canvas").transform.Find("LevelPanel").transform.Find("Slide").gameObject.SetActive(false);
+            GameObject.Find("Canvas").transform.Find("LevelPanel").gameObject.SetActive(false);
+
+        }
+    }
+
+
+
+
+
+
     public void OnClickExit()
     {
         if(which == true)

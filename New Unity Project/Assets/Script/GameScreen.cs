@@ -10,6 +10,8 @@ public class GameScreen : MonoBehaviour
 {
     public void OnClickExit()
     {
+        Debug.Log("1");
+
         if (ManagerData.instanceData.gameCategory == 1)
             SceneManager.LoadScene("MapScene");
         else if(ManagerData.instanceData.gameCategory == 2)
