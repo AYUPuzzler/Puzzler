@@ -21,11 +21,7 @@ public class SlidePuzzle : MonoBehaviour
     PuzzleState state;
     // Start is called before the first frame update
 
-    void Awake()
-    {
-        GameObject Panel = GameObject.Find("StartPanel");
-        Panel.GetComponent<RectTransform>().position = new Vector3(0, 0, -1250f);
-    }
+
     void Start()
     {
         //Texture2D image = ManagerData.instanceData.texture2D;
