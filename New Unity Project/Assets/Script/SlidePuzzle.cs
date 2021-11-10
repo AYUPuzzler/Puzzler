@@ -27,15 +27,19 @@ public class SlidePuzzle : MonoBehaviour
         //Texture2D image = ManagerData.instanceData.texture2D;
         //TextureImporter importer = AssetImporter.GetAtPath(path) as TextureImporter;
         CreateSlidePuzzle();
+        StartShuffle();
     }
 
-    void Update()
-    {
-        if (state == PuzzleState.Solved && Input.GetKeyDown(KeyCode.Space))
-        {
-            StartShuffle();
-            Destroy(GameObject.Find("StartPanel"));
-        }
+    //void Update()
+    //{
+    //    if (state == PuzzleState.Solved && Input.GetKeyDown(KeyCode.Space))
+    //    {
+    //        StartShuffle();
+    //        Destroy(GameObject.Find("StartPanel"));
+    //    }
+    //}
+    public void OnClick() {
+        Destroy(GameObject.Find("StartPanel"));
     }
 
     void CreateSlidePuzzle() 
