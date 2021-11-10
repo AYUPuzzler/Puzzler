@@ -167,6 +167,7 @@ public class SlidePuzzle : MonoBehaviour
         }
         state = PuzzleState.Solved;
         emptyBlock.gameObject.SetActive(true);
+        GameObject.Find("SCCanvas").transform.Find("ClearPanel").gameObject.SetActive(true);
     }
 
 }
