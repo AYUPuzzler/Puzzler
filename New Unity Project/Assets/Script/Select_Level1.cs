@@ -13,8 +13,7 @@ public class Select_Level1 : MonoBehaviour
     void Start()
     {
         Level = GameObject.Find("Level").GetComponent<Text>();
-        //ManagerData.instanceData.gameLevel = game_Level;
-        //Level.text = game_Level.ToString();
+        game_Level = 3;
 
     }
 
@@ -32,7 +31,8 @@ public class Select_Level1 : MonoBehaviour
 
     public void onClickLeft()
     {
-        game_Level--;
+        if (game_Level > 3)
+            game_Level--;
     }
     public void onClickPlay()
     {
