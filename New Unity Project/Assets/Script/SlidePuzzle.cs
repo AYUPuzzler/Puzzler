@@ -27,7 +27,7 @@ public class SlidePuzzle : MonoBehaviour
     {
         //Texture2D image = ManagerData.instanceData.texture2D;
         //TextureImporter importer = AssetImporter.GetAtPath(path) as TextureImporter;
-        Destroy(GameObject.Find("StartPanel")); // 임시 임!!!!!!!!@@@@@@@@@@@@!!!!!!!!!!@@@@@@@@@@
+        //Destroy(GameObject.Find("StartPanel")); // 임시 임!!!!!!!!@@@@@@@@@@@@!!!!!!!!!!@@@@@@@@@@
         CreateSlidePuzzle();
         StartShuffle();
     }
