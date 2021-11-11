@@ -14,7 +14,6 @@ public class Select_Level1 : MonoBehaviour
     {
         Level = GameObject.Find("Level").GetComponent<Text>();
         game_Level = 3;
-
     }
 
     // Update is called once per frame

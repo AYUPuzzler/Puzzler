@@ -6,9 +6,10 @@ public class SlidePuzzle : MonoBehaviour
 {
     public Texture2D image;
     public int blocksPerLine;
-    public int shuffleLength = 20;
+    public int shuffleLength = 500;
     public float defaultMoveDuration = .2f;
     public float shuffleMoveDuration = .1f;
+    bool ShuffleOn;
 
     Block emptyBlock;
     Block[,] blocks;
@@ -26,6 +27,7 @@ public class SlidePuzzle : MonoBehaviour
     {
         //Texture2D image = ManagerData.instanceData.texture2D;
         //TextureImporter importer = AssetImporter.GetAtPath(path) as TextureImporter;
+        Destroy(GameObject.Find("StartPanel")); // 임시 임!!!!!!!!@@@@@@@@@@@@!!!!!!!!!!@@@@@@@@@@
         CreateSlidePuzzle();
         StartShuffle();
     }
@@ -101,7 +103,16 @@ public class SlidePuzzle : MonoBehaviour
 
             Vector2 targetPosition = emptyBlock.transform.position;
             emptyBlock.transform.position = blockToMove.transform.position;
-            blockToMove.MoveToPosition(targetPosition, duration);
+            if (ShuffleOn)
+            {
+                Debug.Log("duration = 0");
+                blockToMove.MoveToPosition(targetPosition, 0);
+            }
+            else
+            {
+                Debug.Log("duration = " + duration);
+                blockToMove.MoveToPosition(targetPosition, duration);
+            }
             blockIsMoving = true;
         }
     }
@@ -130,10 +141,12 @@ public class SlidePuzzle : MonoBehaviour
 
     void StartShuffle()
     {
+        ShuffleOn = true;
         state = PuzzleState.Shuffling;
         shuffleMovesRemaining = shuffleLength;
         emptyBlock.gameObject.SetActive(false);
         MakeNextShuffleMove();
+        //ShuffleOn = false; // 이걸 어디에 넣어야할가
     }
 
 
@@ -158,6 +171,8 @@ public class SlidePuzzle : MonoBehaviour
                 }
             }
         }
+        if(shuffleMovesRemaining == 0)
+            ShuffleOn = false; // 0이 되는 순간 슬라이드 애니메이션 삽입
     }
 
     void CheckIfSolved()
