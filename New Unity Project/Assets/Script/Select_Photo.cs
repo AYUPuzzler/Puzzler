@@ -9,6 +9,17 @@ public class Select_Photo : MonoBehaviour
 {
     public Texture2D texture;
 
+    void Update()
+    {
+        if (Application.platform == RuntimePlatform.Android)
+        {
+            if (Input.GetKey(KeyCode.Escape))
+            {
+                OnClickExit();
+            }
+        }
+    }
+
     Texture2D duplicateTexture(Texture2D source)
     {
         RenderTexture renderTex = RenderTexture.GetTemporary(source.width, source.height, 0, RenderTextureFormat.Default, RenderTextureReadWrite.Linear);

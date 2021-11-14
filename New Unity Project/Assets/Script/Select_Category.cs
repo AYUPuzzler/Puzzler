@@ -6,6 +6,18 @@ using UnityEngine.SceneManagement;
 public class Select_Category : MonoBehaviour
 {
     public static bool which = false;
+
+    void Update()
+    {
+        if (Application.platform == RuntimePlatform.Android)
+        {
+            if (Input.GetKey(KeyCode.Escape))
+            {
+                OnClickExit();
+            }
+        }
+    }
+
     public void Select_Jigsaw()
     {
         ManagerData.instanceData.Category = 1;
@@ -47,11 +59,6 @@ public class Select_Category : MonoBehaviour
 
         }
     }
-
-
-
-
-
 
     public void OnClickExit()
     {

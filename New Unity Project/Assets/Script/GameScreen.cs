@@ -8,6 +8,17 @@ using System.IO;
 
 public class GameScreen : MonoBehaviour
 {
+    void Update()
+    {
+        if (Application.platform == RuntimePlatform.Android)
+        {
+            if (Input.GetKey(KeyCode.Escape))
+            {
+                OnClickExit();
+            }
+        }
+    }
+
     public void OnClickExit()
     {
         Debug.Log("1");

@@ -5,7 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class Select_Main : MonoBehaviour
 {
-    // Start is called before the first frame update
+    void Update()
+    {
+        if (Application.platform == RuntimePlatform.Android)
+        {
+            if (Input.GetKey(KeyCode.Escape))
+            {
+                Main();
+            }
+        }
+    }
     public void Main()
     {
         SceneManager.LoadScene("MainMenu");
