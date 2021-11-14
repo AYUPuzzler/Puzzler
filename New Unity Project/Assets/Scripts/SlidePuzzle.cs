@@ -114,7 +114,6 @@ public class SlidePuzzle : MonoBehaviour
                 blockToMove.MoveToPosition(targetPosition, duration);
             }
             blockIsMoving = true;
-
             GameObject.Find("Sound").GetComponent<AudioSource>().Play();
         }
     }
