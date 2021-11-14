@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/Scenes/MapScene.unity
+    path: Assets/Scenes/MapScene2.unity
     guid: 9af57d64889a3c743a615dffe7578fe1
   - enabled: 1
     path: Assets/Scenes/Select_Category.unity
@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Select_Main.unity
     guid: 84c5e8a140856854da583466c5680231
+  - enabled: 1
+    path: Assets/Scenes/MapScene1.unity
+    guid: d04d5e603d9b94a4dbc2bd53207a3bb3
   m_configObjects: {}

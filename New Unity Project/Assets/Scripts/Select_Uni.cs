@@ -22,6 +22,10 @@ public class Select_Uni : MonoBehaviour
     }
     public void Anyang_Uni()
     {
-        SceneManager.LoadScene("MapScene");
+        SceneManager.LoadScene("MapScene1");
+    }
+    public void Sungkuyl()
+    {
+        SceneManager.LoadScene("MapScene2");
     }
 }

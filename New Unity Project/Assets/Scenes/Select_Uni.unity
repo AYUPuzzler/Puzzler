@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1335,6 +1335,7 @@ GameObject:
   - component: {fileID: 1567183232}
   - component: {fileID: 1567183231}
   - component: {fileID: 1567183230}
+  - component: {fileID: 1567183233}
   m_Layer: 5
   m_Name: Button (4)
   m_TagString: Untagged
@@ -1405,7 +1406,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1567183231}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1567183233}
+        m_TargetAssemblyTypeName: Select_Uni, Assembly-CSharp
+        m_MethodName: Sungkuyl
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1567183231
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1444,6 +1457,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1567183228}
   m_CullTransparentMesh: 1
+--- !u!114 &1567183233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1567183228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc15b5ab10246f74f9020b5cffb25750, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1603046872
 GameObject:
   m_ObjectHideFlags: 0
@@ -1574,7 +1599,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0000038147, y: 71}
+  m_AnchoredPosition: {x: -0.0000038147, y: 76}
   m_SizeDelta: {x: 400, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1773532241
@@ -1597,7 +1622,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 2885951f35d7c8b429d284f27d19229e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5b3b2618f62f8da48ad6ecf51953f359, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

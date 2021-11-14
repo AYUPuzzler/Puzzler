@@ -21,10 +21,8 @@ public class GameScreen : MonoBehaviour
 
     public void OnClickExit()
     {
-        Debug.Log("1");
-
         if (ManagerData.instanceData.gameCategory == 1)
-            SceneManager.LoadScene("MapScene");
+            SceneManager.LoadScene("Select_Uni");
         else if(ManagerData.instanceData.gameCategory == 2)
             SceneManager.LoadScene("Select_Photo");
     }
