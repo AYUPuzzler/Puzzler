@@ -60,6 +60,7 @@ public class PieceScript : MonoBehaviour
                 if (InRightPosition == false)
                 {
                     transform.position = RightPosition;
+                    GameObject.Find("Sound").GetComponent<AudioSource>().Play();
                     InRightPosition = true;
                     GetComponent<SortingGroup>().sortingOrder = 0;
                     Completetest();

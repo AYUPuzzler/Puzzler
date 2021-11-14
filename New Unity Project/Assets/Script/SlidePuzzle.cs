@@ -99,6 +99,9 @@ public class SlidePuzzle : MonoBehaviour
             emptyBlock.transform.position = blockToMove.transform.position;
             blockToMove.MoveToPosition(targetPosition, duration);
             blockIsMoving = true;
+
+            GameObject.Find("Sound").GetComponent<AudioSource>().Play();
+
         }
     }
 
