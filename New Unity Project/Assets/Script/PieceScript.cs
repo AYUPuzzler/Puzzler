@@ -60,6 +60,7 @@ public class PieceScript : MonoBehaviour
                 if (InRightPosition == false)
                 {
                     transform.position = RightPosition;
+                    
                     InRightPosition = true;
                     GetComponent<SortingGroup>().sortingOrder = 0;
                     Completetest();

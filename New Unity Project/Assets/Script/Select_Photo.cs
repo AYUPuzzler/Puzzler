@@ -58,6 +58,7 @@ public class Select_Photo : MonoBehaviour
 
                 ManagerData.instanceData.texture2D = duplicateTexture(texture);
                 ManagerData.instanceData.Image = sp;
+                ManagerData.instanceData.Select = true;
             }
         });
 
@@ -67,15 +68,18 @@ public class Select_Photo : MonoBehaviour
 
     public void OnClickStartZigsaw()
     {
-        if (ManagerData.instanceData.Category == 1)
+        if (ManagerData.instanceData.Select == true)
         {
-            GameObject.Find("Canvas").transform.Find("LevelPanel").transform.Find("Jigsaw").gameObject.SetActive(true);
+            if (ManagerData.instanceData.Category == 1)
+            {
+                GameObject.Find("Canvas").transform.Find("LevelPanel").transform.Find("Jigsaw").gameObject.SetActive(true);
+            }
+            if (ManagerData.instanceData.Category == 2)
+            {
+                GameObject.Find("Canvas").transform.Find("LevelPanel").transform.Find("Slide").gameObject.SetActive(true);
+            }
+            GameObject.Find("Canvas").transform.Find("LevelPanel").gameObject.SetActive(true);
         }
-        if (ManagerData.instanceData.Category == 2)
-        {
-            GameObject.Find("Canvas").transform.Find("LevelPanel").transform.Find("Slide").gameObject.SetActive(true);
-        }
-        GameObject.Find("Canvas").transform.Find("LevelPanel").gameObject.SetActive(true);
     }
     public void ExitPanel()
     {

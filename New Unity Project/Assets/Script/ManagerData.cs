@@ -13,6 +13,7 @@ public class ManagerData : MonoBehaviour
     public int gameCategory;
     public int slideLevel;
     public int JigsawLevel;
+    public bool Select = false;
 
     private void Awake()
     {
