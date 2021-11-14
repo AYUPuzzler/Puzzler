@@ -6,7 +6,7 @@ public class SlidePuzzle : MonoBehaviour
 {
     public Texture2D image;
     public int blocksPerLine;
-    public int shuffleLength = 500;
+    public int shuffleLength;
     public float defaultMoveDuration = .2f;
     public float shuffleMoveDuration = .1f;
     bool ShuffleOn;
@@ -29,6 +29,7 @@ public class SlidePuzzle : MonoBehaviour
         //TextureImporter importer = AssetImporter.GetAtPath(path) as TextureImporter;
         //Destroy(GameObject.Find("StartPanel")); // юс╫ц юс!!!!!!!!@@@@@@@@@@@@!!!!!!!!!!@@@@@@@@@@
         CreateSlidePuzzle();
+        shuffleLength = ManagerData.instanceData.slideLevel * 25;
         StartShuffle();
     }
 
