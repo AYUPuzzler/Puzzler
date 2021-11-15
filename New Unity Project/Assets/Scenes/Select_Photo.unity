@@ -185,8 +185,8 @@ MonoBehaviour:
     m_FontSize: 80
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 8
-    m_MaxSize: 80
+    m_MinSize: 1
+    m_MaxSize: 100
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -1087,6 +1087,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Level: {fileID: 0}
+  Level2: {fileID: 0}
 --- !u!114 &853242684
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1263,8 +1264,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Select_Category, Assembly-CSharp
+      - m_Target: {fileID: 801440600}
+        m_TargetAssemblyTypeName: Select_Photo, Assembly-CSharp
         m_MethodName: ExitPanel
         m_Mode: 1
         m_Arguments:
@@ -1523,14 +1524,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9137255, g: 0.74509805, b: 0.58431375, a: 1}
+  m_Color: {r: 0.6981132, g: 0.64248526, b: 0.58944464, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b05d56ec7d0ddf64a88734a1f23eb3f4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 50498dd33b0d6a248843b3605f09e920, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1923,6 +1924,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Level: {fileID: 0}
+  Level2: {fileID: 0}
 --- !u!114 &1788260430
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2295,6 +2297,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Level: {fileID: 0}
+  Level2: {fileID: 0}
 --- !u!114 &1904030487
 MonoBehaviour:
   m_ObjectHideFlags: 0
