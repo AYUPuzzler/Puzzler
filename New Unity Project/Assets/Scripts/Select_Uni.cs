@@ -28,4 +28,8 @@ public class Select_Uni : MonoBehaviour
     {
         SceneManager.LoadScene("MapScene2");
     }
+    public void Hanra()
+    {
+        SceneManager.LoadScene("MapScene3");
+    }
 }
