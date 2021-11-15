@@ -65,7 +65,7 @@ public class Select_Category : MonoBehaviour
         if(which == true)
         {
             which = false;
-            SceneManager.LoadScene("MapScene");
+            SceneManager.LoadScene("Select_Uni");
         }
         else
         SceneManager.LoadScene("Select_Main");
