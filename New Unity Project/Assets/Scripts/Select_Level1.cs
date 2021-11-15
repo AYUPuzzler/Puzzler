@@ -7,12 +7,13 @@ using UnityEngine.UI;
 public class Select_Level1 : MonoBehaviour
 {
     public static int game_Level;
-    public Text Level;
+    public Text Level, Level2;
 
     // Start is called before the first frame update
     void Start()
     {
         Level = GameObject.Find("Level").GetComponent<Text>();
+        Level2 = GameObject.Find("Level2").GetComponent<Text>();
         game_Level = 3;
     }
 
@@ -21,6 +22,7 @@ public class Select_Level1 : MonoBehaviour
     {
         //level.text = "ManagerData.instanceData.gameLevel";
         Level.text = game_Level.ToString();
+        Level2.text = game_Level.ToString();
     }
 
      public void onClickRight() 

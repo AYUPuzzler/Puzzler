@@ -282,6 +282,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2032}
     - Class: 114
+      Script: {instanceID: 2080}
+    - Class: 114
       Script: {instanceID: 2176}
     - Class: 114
       Script: {instanceID: 2390}
@@ -296,6 +298,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2984}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -335,6 +339,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2032}
     - Class: 114
+      Script: {instanceID: 2080}
+    - Class: 114
       Script: {instanceID: 2176}
     - Class: 114
       Script: {instanceID: 2390}
@@ -349,6 +355,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2984}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -508,8 +516,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1496}
     - Class: 114
-      Script: {instanceID: 1778}
-    - Class: 114
       Script: {instanceID: 2080}
     - Class: 114
       Script: {instanceID: 2176}
@@ -519,8 +525,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 2420}
     - Class: 114
       Script: {instanceID: 2510}
-    - Class: 114
-      Script: {instanceID: 2552}
     - Class: 114
       Script: {instanceID: 2692}
     - Class: 114
@@ -639,6 +643,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 2080}
     - Class: 114
       Script: {instanceID: 2110}
+    - Class: 114
+      Script: {instanceID: 2176}
     - Class: 114
       Script: {instanceID: 2390}
     - Class: 114
@@ -1527,4 +1533,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Select_Uni.unity
   - Assets/Scenes/Select_Main.unity
   - Assets/Scenes/MapScene1.unity
-  playerPath: C:/Users/woo/Desktop/func.apk
+  playerPath: C:/Users/w/Desktop/test.apk
