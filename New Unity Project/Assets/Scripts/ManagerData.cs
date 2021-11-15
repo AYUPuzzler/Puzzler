@@ -14,6 +14,7 @@ public class ManagerData : MonoBehaviour
     public int slideLevel;
     public int JigsawLevel;
     public bool Select = false;
+    public int B_Anyang;
 
     private void Awake()
     {

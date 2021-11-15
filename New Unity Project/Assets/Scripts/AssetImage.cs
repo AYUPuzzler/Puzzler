@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class AssetImage : MonoBehaviour
 {
     public Sprite Sp;
+    public int bnum;
 
     public static Texture2D ConvertSpriteToTexture(Sprite sprite)
     {
@@ -40,6 +41,7 @@ public class AssetImage : MonoBehaviour
         GameObject.Find("Image").GetComponent<Image>().sprite = Sp;
         ManagerData.instanceData.Image = Sp;
         ManagerData.instanceData.texture2D = ConvertSpriteToTexture(Sp);
+        ManagerData.instanceData.B_Anyang = bnum;
         Debug.Log("success");
     }
     // Start is called before the first frame update

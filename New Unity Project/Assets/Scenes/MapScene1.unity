@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -250,6 +250,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Sp: {fileID: 21300000, guid: 49298fd23f172174dab2378da0abe604, type: 3}
+  bnum: 0
 --- !u!114 &46293833
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -541,6 +542,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Sp: {fileID: 21300000, guid: e7806a548d54a564e877de8b9c6d7f05, type: 3}
+  bnum: 3
 --- !u!114 &121197763
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -687,6 +689,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Sp: {fileID: 21300000, guid: 35bdcf5a7aafbe54f86548338811cd60, type: 3}
+  bnum: 4
 --- !u!114 &169824656
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1022,6 +1025,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Sp: {fileID: 0}
+  bnum: 0
 --- !u!4 &227581504
 Transform:
   m_ObjectHideFlags: 0
@@ -1206,6 +1210,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Sp: {fileID: 21300000, guid: 78d1c01d33df2e144a9784e81cc7310d, type: 3}
+  bnum: 6
 --- !u!114 &927412595
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1352,6 +1357,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Sp: {fileID: 21300000, guid: 2dfece6165fca784f8e62c16326201c2, type: 3}
+  bnum: 5
 --- !u!114 &1063724825
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1592,6 +1598,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Sp: {fileID: 21300000, guid: 724d6eeea04568446becdea5eb8a9f4d, type: 3}
+  bnum: 1
 --- !u!1 &1325433147
 GameObject:
   m_ObjectHideFlags: 0
@@ -1644,6 +1651,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Sp: {fileID: 21300000, guid: 9a1b6c5a126e7e5468da584d91aabf51, type: 3}
+  bnum: 2
 --- !u!114 &1325433150
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1869,6 +1877,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Sp: {fileID: 21300000, guid: 1a45db24bfd865344aeeb956a218688b, type: 3}
+  bnum: 0
 --- !u!114 &1789201356
 MonoBehaviour:
   m_ObjectHideFlags: 0

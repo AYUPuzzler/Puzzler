@@ -29,7 +29,7 @@ public class SlidePuzzle : MonoBehaviour
         //TextureImporter importer = AssetImporter.GetAtPath(path) as TextureImporter;
         //Destroy(GameObject.Find("StartPanel")); // юс╫ц юс!!!!!!!!@@@@@@@@@@@@!!!!!!!!!!@@@@@@@@@@
         CreateSlidePuzzle();
-        shuffleLength = ManagerData.instanceData.slideLevel * 25;
+        shuffleLength = 3;//ManagerData.instanceData.slideLevel * 25;
         StartShuffle();
     }
 
@@ -189,6 +189,19 @@ public class SlidePuzzle : MonoBehaviour
         state = PuzzleState.Solved;
         emptyBlock.gameObject.SetActive(true);
         GameObject.Find("SCCanvas").transform.Find("ClearPanel").gameObject.SetActive(true);
+
+        if(ManagerData.instanceData.B_Anyang == 1)
+            GameObject.Find("SCCanvas").transform.Find("ClearPanel").transform.Find("sin").gameObject.SetActive(true);
+        else if(ManagerData.instanceData.B_Anyang == 2)
+            GameObject.Find("SCCanvas").transform.Find("ClearPanel").transform.Find("suri").gameObject.SetActive(true);
+        else if (ManagerData.instanceData.B_Anyang == 3)
+            GameObject.Find("SCCanvas").transform.Find("ClearPanel").transform.Find("bong").gameObject.SetActive(true);
+        else if (ManagerData.instanceData.B_Anyang == 4)
+            GameObject.Find("SCCanvas").transform.Find("ClearPanel").transform.Find("vision").gameObject.SetActive(true);
+        else if (ManagerData.instanceData.B_Anyang == 5)
+            GameObject.Find("SCCanvas").transform.Find("ClearPanel").transform.Find("ari").gameObject.SetActive(true);
+        else if (ManagerData.instanceData.B_Anyang == 6)
+            GameObject.Find("SCCanvas").transform.Find("ClearPanel").transform.Find("lib").gameObject.SetActive(true);
     }
 
 }
