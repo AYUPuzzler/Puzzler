@@ -29,7 +29,7 @@ public class SlidePuzzle : MonoBehaviour
         //TextureImporter importer = AssetImporter.GetAtPath(path) as TextureImporter;
         //Destroy(GameObject.Find("StartPanel")); // юс╫ц юс!!!!!!!!@@@@@@@@@@@@!!!!!!!!!!@@@@@@@@@@
         CreateSlidePuzzle();
-        shuffleLength = 3;//ManagerData.instanceData.slideLevel * 25;
+        shuffleLength = ManagerData.instanceData.slideLevel * 20;
         StartShuffle();
     }
 

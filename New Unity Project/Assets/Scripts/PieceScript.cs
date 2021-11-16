@@ -53,7 +53,7 @@ public class PieceScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Vector3.Distance(a: transform.position, b: RightPosition) < 4f)
+        if (Vector3.Distance(a: transform.position, b: RightPosition) < 1f)
         {
             if (!Selected)
             {
