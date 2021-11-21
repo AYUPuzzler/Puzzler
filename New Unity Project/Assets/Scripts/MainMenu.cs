@@ -6,6 +6,17 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    public void OnClickPanel()
+    {
+        GameObject.Find("Canvas").transform.Find("HowtoPlay").gameObject.SetActive(true);
+    }
+
+    public void OnClickPanelExit()
+    {
+        GameObject.Find("Canvas").transform.Find("HowtoPlay").gameObject.SetActive(false);
+    }
+
+
     public void OnClickStart()
     {
         SceneManager.LoadScene("Select_Main");
