@@ -39,16 +39,16 @@
 ---  
 
 ## Flow Chart  
-
-Preview  
-https://www.figma.com/proto/pDIMC36pCbM8Xtfuw1ps0g/Puzzler?node-id=0%3A180&scaling=scale-down&page-id=0%3A1&starting-point-node-id=0%3A180  
-
-  
-  
 Main Flow Chart  
 
-<img src="https://user-images.githubusercontent.com/86705754/178398526-73afb24a-c888-45e6-9037-7eec8d6530f1.png" width="800" height="400"/>
+<img src="https://user-images.githubusercontent.com/86705754/178398860-cfb8b98e-fd18-4a66-a476-738f6fdc55a0.png" width="800" height="400"/>
 https://www.figma.com/file/pDIMC36pCbM8Xtfuw1ps0g/Puzzler?node-id=0%3A1  
+   
+   
+  
+Prototype > https://www.figma.com/proto/pDIMC36pCbM8Xtfuw1ps0g/Puzzler?node-id=0%3A180&scaling=scale-down&page-id=0%3A1&starting-point-node-id=0%3A180  
+
+
 
 ---  
 
