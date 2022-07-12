@@ -1,6 +1,11 @@
 # 학교와 사용자의 데이터를 활용한 퍼즐
 
 ---
+
+## Preview  
+
+---  
+
 ## 개요
 - AYU_LAB소속 Puzzler의 Capstone 프로젝트  
 - Capstone은 대학에서 배운 이론을 바탕으로 자신의 작품을 만드는 과정이며 목적은 사회에 도움이 되는 아이디어로 프로젝트를 진행할 것  
@@ -35,6 +40,16 @@
 
 ## Flow Chart  
 
+Preview  
+https://www.figma.com/proto/pDIMC36pCbM8Xtfuw1ps0g/Puzzler?node-id=0%3A180&scaling=scale-down&page-id=0%3A1&starting-point-node-id=0%3A180  
+
+  
+  
+Main Flow Chart  
+
+<img src="https://user-images.githubusercontent.com/86705754/178398526-73afb24a-c888-45e6-9037-7eec8d6530f1.png" width="800" height="400"/>
+https://www.figma.com/file/pDIMC36pCbM8Xtfuw1ps0g/Puzzler?node-id=0%3A1  
+
 ---  
 
 ## 기능 명세서  
@@ -45,6 +60,6 @@
 
 ---  
 
-## 시연 영상  
+## 개발 결과
 
 
