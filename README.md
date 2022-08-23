@@ -3,6 +3,7 @@
 ---
 
 ## Preview  
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/86705754/186277448-df1f34d8-f6ad-443c-8503-a809728ff744.gif)
 
 ---  
 
@@ -47,19 +48,3 @@ https://www.figma.com/file/pDIMC36pCbM8Xtfuw1ps0g/Puzzler?node-id=0%3A1
    
   
 Prototype > https://www.figma.com/proto/pDIMC36pCbM8Xtfuw1ps0g/Puzzler?node-id=0%3A180&scaling=scale-down&page-id=0%3A1&starting-point-node-id=0%3A180  
-
-
-
----  
-
-## 기능 명세서  
-
----  
-
-## 개발 환경  
-
----  
-
-## 개발 결과
-
-
