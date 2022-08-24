@@ -1,4 +1,4 @@
-# 학교와 사용자의 데이터를 활용한 퍼즐
+# University Custom Puzzle
 
 ---
 
