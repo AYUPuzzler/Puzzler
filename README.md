@@ -52,4 +52,4 @@ Prototype > https://www.figma.com/proto/pDIMC36pCbM8Xtfuw1ps0g/Puzzler?node-id=0
 
 ## Notion
 
-Link : https://www.notion.so/University-Custom-Puzzle-2021-Capstone-88e13e2e71d840aaa8474e52d7969a43
+### [Link](https://www.notion.so/University-Custom-Puzzle-2021-Capstone-88e13e2e71d840aaa8474e52d7969a43)
