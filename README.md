@@ -48,3 +48,8 @@ https://www.figma.com/file/pDIMC36pCbM8Xtfuw1ps0g/Puzzler?node-id=0%3A1
    
   
 Prototype > https://www.figma.com/proto/pDIMC36pCbM8Xtfuw1ps0g/Puzzler?node-id=0%3A180&scaling=scale-down&page-id=0%3A1&starting-point-node-id=0%3A180  
+
+
+## Notion
+
+Link : https://www.notion.so/University-Custom-Puzzle-2021-Capstone-88e13e2e71d840aaa8474e52d7969a43
